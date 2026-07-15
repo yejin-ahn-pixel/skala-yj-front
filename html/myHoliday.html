@@ -1,58 +1,93 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>myHoliday</title>
+    <title>휴일 일과</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Gowun+Batang&family=Nanum+Gothic:wght@400;700&family=Nanum+Gothic+Coding&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
-<body>
-    <h1>나의 휴일 일과</h1>
-    <p>7.17(금)~7.20(일) 連休の間に回避してた課題を解決してみましょう</p>
-    <div style="background-color: rgba(249, 185, 185, 0.478); border:1px solid gray; padding:10px; margin-bottom:15px;">
-    <h2>🌞 오전</h2>    
-        <ul>
-            <li>기상</li>
-            <li>빨래 돌리기</li>
-            <li>밥 준비</li>
-        </ul>
-    </div>
+<body class="holiday-page">
+    <div class="holiday-container">
+        <header class="holiday-header">
+            <h1>나의 휴일 일과</h1>
+            <p>
+                7.17(금)~7.20(일) 연휴 동안 미뤄두었던 일들을
+                해결하는 시간.
+            </p>
+        </header>
+    <main class="holiday-main">
+        <section class="holiday-card">
+            <h2>🌞 오전</h2>
+            <ul>
+                <li>기상</li>
+                <li>빨래 돌리기</li>
+                <li>밥 준비</li>
+            </ul> 
+        </section>
+
     <br>
 
-    <div>
+    <section class="holiday-meal">
         <h2>🍚 점심밥</h2>
-        <mark>설거지는 바로바로 합시다.</mark>
-    </div>
+        <p><mark><b></b> 바로바로 합시다.</mark></p>
+    </section>
 
     <br>
 
-    <div style="background-color: rgba(87, 189, 97, 0.257); border:1px solid gray; padding:10px; margin-bottom:15px;">
-    <h2>😀 오후</h2>
+    <section class="holiday-card">
+        <h2>😀 오후</h2>
+        
         <ul>
             <li>skala 과제</li>
             <li>다이소</li>
             <li>스트레칭, 산책</li>
             <li>방 청소</li>
         </ul>
-    </div>
-    <br>
-    <div>
-        <h2>🍽️ 저녁밥</h2>
-        <mark>밥은 제때 먹읍시다.</mark>
-    </div>
+    </section>
 
     <br>
-    <div style="background-color: rgba(87, 106, 189, 0.257); border:1px solid gray; padding:10px; margin-bottom:15px;">
+    
+    <section class="holiday-meal">
+        <h2>🍽️ 저녁밥</h2>
+        <p>
+             <mark>밥은 제때 먹읍시다.</mark>
+        </p>
+    </section>
+
+    <br>
+    
+    <section class="holiday-card">
     <h2>🥹야간</h2>
         <ul>
             <li>밀린 연락 청산하기</li>
             <li>한 주 회고 작성하기</li>
             <li>선아 할나 방송 보기</li>
         </ul>
-    </div>
+    </section>
+<br>
+    <section class="holiday-sleep">
+
+        <h2>🌙취침</h2>
+        <p><mark>하루를 정리하고 빠르게 잠들기💤</mark></p>
+        
+    </section>
+
+    <nav class="holiday-navigation">
+        <a href="index.html">메인으로 돌아가기</a>
+    </nav>
     
-    <h2>취침</h2>
-    <p></p>
-    <mark></mark>
+    <footer class="holiday-footer">
+        <p>SKALA FRONT-END PAGE</p>
+    </footer>
+
+    </div>
 </body>
 </html>
