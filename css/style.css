@@ -119,6 +119,8 @@ footer {
     background-color: #168bc5;
     border: 1px solid #168bc5;
     border-radius: 6px;
+
+    transition: color 0.2s, background-color 0.2s;
 }
 
 .bottom-navigation a:hover {
@@ -164,6 +166,8 @@ img {
 
     border: 0;
     border-radius: 6px;
+
+    transition: background-color 0.2s;
 }
 
 .practice-card button:hover,
@@ -293,6 +297,8 @@ input[type="reset"],
     cursor: pointer;
     border: 1px solid #168bc5;
     border-radius: 6px;
+
+    transition: color 0.2s, background-color 0.2s;
 }
 
 input[type="submit"] {
@@ -356,11 +362,76 @@ input[type="reset"] {
 }
 
 /* 휴일 카드 움직임 */
-.schedule-card {
+.holiday-layout {
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    gap: 20px;
+}
+
+.holiday-aside {
+    align-self: start;
+}
+
+.holiday-main {
+    padding: 0;
+}
+
+.holiday-note {
+    margin-bottom: 20px;
+    padding: 18px;
+
+    background-color: #ffffff;
+    border: 1px solid #168bc5;
+    border-radius: 10px;
+}
+
+.holiday-note h2 {
+    font-size: 22px;
+}
+
+.holiday-note ul,
+.holiday-note p {
+    margin-bottom: 0;
+}
+
+.holiday-checklist p {
+    margin-bottom: 8px;
+}
+
+.holiday-checklist p:last-child {
+    margin-bottom: 0;
+}
+
+.holiday-checklist input:checked + label {
+    color: #234f6b;
+    text-decoration: line-through;
+}
+
+.holiday-card {
+    margin-bottom: 20px;
+    padding: 20px;
+
+    background-color: #eef9ff;
+    border-left: 5px solid #168bc5;
+    border-radius: 10px;
+
     transition: transform 0.2s;
 }
 
-.schedule-card:hover {
+.holiday-card h2 {
+    font-size: 24px;
+}
+
+.holiday-card ul {
+    margin-bottom: 0;
+    padding-left: 24px;
+}
+
+.holiday-card > p {
+    margin-bottom: 0;
+}
+
+.holiday-card:hover {
     transform: translateX(5px);
 }
 
@@ -372,6 +443,10 @@ input[type="reset"] {
     padding: 30px;
 
     background-color: #ffffff;
+}
+
+.home-header {
+    animation: fadeIn 0.8s ease;
 }
 
 .home-navigation {
@@ -391,6 +466,8 @@ input[type="reset"] {
     background-color: #ffffff;
     border: 1px solid #168bc5;
     border-radius: 6px;
+
+    transition: color 0.2s, background-color 0.2s;
 }
 
 .home-navigation a:hover {
@@ -491,7 +568,8 @@ input[type="reset"] {
     }
 
     .home-layout,
-    .profile-grid {
+    .profile-grid,
+    .holiday-layout {
         grid-template-columns: 1fr;
     }
 }
@@ -499,5 +577,17 @@ input[type="reset"] {
 @media (max-width: 786px) {
     .trip-list {
         grid-template-columns: 1fr;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }

@@ -4,113 +4,102 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>휴일 일과</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Gowun+Batang&family=Nanum+Gothic:wght@400;700&display=swap"
-        rel="stylesheet"
-    >
-
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang&family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
-
-    <style>
-        .schedule-card {
-            border-left: 7px solid #168bc5;
-        }
-
-
-        .schedule-card ul {
-            margin-bottom: 0;
-            padding-left: 24px;
-        }
-
-
-        .schedule-card li {
-            margin-bottom: 6px;
-        }
-
-
-        .schedule-card li:last-child {
-            margin-bottom: 0;
-        }
-    </style>
-≈
 </head>
 
 <body>
     <div class="container">
-        <header class="header">
-            <h1 style="color:#087ab5;"><mark><b>나의 휴일 일과</b> </mark></h1>
-            <p>
-                7.17(금)~7.20(일) 연휴 동안 미뤄두었던 일들을
-                해결하는 시간.
-            </p>
+        <header class="page-header">
+            <h1>나의 휴일 일과</h1>
+            <p>7월 연휴 동안 미뤄둔 일을 정리하고, 충분히 쉬어가는 하루 계획입니다.</p>
         </header>
-    <main class="main-content">
-        <section class="content-card schedule-card">
-            <h2>🌞 오전</h2>
-            <ul>
-                <li>기상</li>
-                <li>빨래 돌리기</li>
-                <li>밥 준비</li>
-            </ul> 
-        </section>
 
-    <br>
+        <div class="holiday-layout">
+            <aside class="holiday-aside">
+                <section class="holiday-note">
+                    <h2>🎯 휴일 목표</h2>
+                    <p>과제와 집안일을 가볍게 끝내고, 저녁에는 한 주를 정리하는 시간을 갖기.</p>
+                </section>
 
-    <section class="content-card meal-card">
-        <h2>🍚 점심밥</h2>
-        <p><mark><b></b> 바로바로 합시다.</mark></p>
-    </section>
+                <section class="holiday-note">
+                    <h2>🧳 준비물</h2>
+                    <div class="holiday-checklist">
+                        <p>
+                            <input type="checkbox" id="holiday-laptop" name="holidayItem" value="laptop">
+                            <label for="holiday-laptop">노트북 충전기</label>
+                        </p>
+                        <p>
+                            <input type="checkbox" id="holiday-memo" name="holidayItem" value="memo">
+                            <label for="holiday-memo">장보기 메모</label>
+                        </p>
+                        <p>
+                            <input type="checkbox" id="holiday-shoes" name="holidayItem" value="shoes">
+                            <label for="holiday-shoes">산책용 편한 신발</label>
+                        </p>
+                    </div>
+                </section>
+            </aside>
 
-    <br>
+            <main class="main-content holiday-main">
+                <section class="holiday-card">
+                    <h2>🌞 오전</h2>
+                    <ul>
+                        <li>기상 후 침구 정리하기</li>
+                        <li>빨래 돌리기</li>
+                        <li>아침 겸 점심 준비하기</li>
+                    </ul>
+                </section>
 
-    <section class="content-card schedule-card">
-        <h2>😀 오후</h2>
-        
-        <ul>
-            <li>skala 과제</li>
-            <li>다이소</li>
-            <li>스트레칭, 산책</li>
-            <li>방 청소</li>
-        </ul>
-    </section>
+                <section class="holiday-card">
+                    <h2>🚶 오후</h2>
+                    <ul>
+                        <li>SKALA 과제 정리하기</li>
+                        <li>다이소 다녀오기</li>
+                        <li>가볍게 스트레칭하고 산책하기</li>
+                        <li>방 청소하기</li>
+                    </ul>
+                </section>
 
-    <br>
-    
-    <section class="content-card meal-card">
-        <h2>🍽️ 저녁밥</h2>
-        <p>
-             <mark>밥은 제때 먹읍시다.</mark>
-        </p>
-    </section>
+                <section class="holiday-card">
+                    <h2>🍽️ 저녁</h2>
+                    <ul>
+                        <li>저녁밥 제때 챙겨 먹기</li>
+                        <li>밀린 연락 답장하기</li>
+                        <li>한 주 회고 작성하기</li>
+                    </ul>
+                </section>
 
-    <br>
-    
-    <section class="content-card schedule-card">
-    <h2>🥹야간</h2>
-        <ul>
-            <li>밀린 연락 청산하기</li>
-            <li>한 주 회고 작성하기</li>
-            <li>선아 할나 방송 보기</li>
-        </ul>
-    </section>
-<br>
-    <section class="content-card sleep-card">
+                <section class="holiday-card">
+                    <h2>🌙 잠들기 전</h2>
+                    <p>내일 할 일을 간단히 적고, 휴대폰을 내려놓은 뒤 빠르게 잠들기.</p>
+                </section>
 
-        <h2>🌙취침</h2>
-        <p><mark>하루를 정리하고 빠르게 잠들기💤</mark></p>
-        
-    </section>
+                <section class="holiday-card">
+                    <h2>📝 휴일 회고</h2>
+                    <form action="#" method="get">
+                        <p>
+                            <label class="form-label" for="holiday-review">오늘 끝낸 일과 아쉬웠던 점</label>
+                            <textarea id="holiday-review" name="holidayReview" rows="5" placeholder="오늘의 휴일을 짧게 정리해보세요."></textarea>
+                        </p>
 
-    <nav class="bottom-navigation">
-        <a href="index.html">메인으로 돌아가기</a>
-    </nav>
-    
-    <footer class="footer">
-        <p>SKALA FRONT-END PAGE</p>
-    </footer>
+                        <div class="form-actions">
+                            <input type="submit" value="회고 제출">
+                        </div>
+                    </form>
+                </section>
+            </main>
+        </div>
 
+        <footer>
+            <nav class="bottom-navigation" aria-label="하단 메뉴">
+                <a href="index.html">메인으로 돌아가기</a>
+            </nav>
+            <p>SKALA FRONT-END PAGE</p>
+        </footer>
     </div>
 </body>
 </html>
