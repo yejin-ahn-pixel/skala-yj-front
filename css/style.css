@@ -1,5 +1,5 @@
 /* ========================================
-   기본 설정
+   전체 기본 설정
 ======================================== */
 
 * {
@@ -8,27 +8,61 @@
 
 body {
     margin: 0;
+    padding: 40px 20px;
 
     font-family: "Nanum Gothic", sans-serif;
     line-height: 1.7;
     color: #234f6b;
-
-    background-color: #eaf7ff;
 }
 
 
 /* ========================================
-   index.html
+   제목
 ======================================== */
 
-.index-page {
-    padding: 40px 20px;
+h1 {
+    margin-top: 0;
+    padding: 15px;
+
+    font-family: "Gowun Batang", serif;
+    font-size: 40px;
+    color: #ffffff;
+
+    background-color: #168bc5;
+
+}
+
+h2 {
+    margin-top: 0;
+    padding-bottom: 8px;
+
+    font-family: "Gowun Batang", serif;
+    font-size: 28px;
+    color: #168bc5;
+
+    border-bottom: 2px solid #168bc5;
 }
 
 
-/* 전체 콘텐츠 영역 */
+/* ========================================
+   링크
+======================================== */
 
-.index-container {
+a {
+    color: #168bc5;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+/* ========================================
+   전체 콘텐츠 박스
+======================================== */
+
+.container {
     width: 90%;
     max-width: 1000px;
 
@@ -38,578 +72,44 @@ body {
     background-color: #ffffff;
 
     border: 2px solid #168bc5;
-    border-radius: 24px;
 }
 
 
 /* ========================================
-   상단 환영 영역
+   공통 영역
 ======================================== */
 
-.index-header {
+header,
+main,
+nav,
+aside,
+footer {
     margin-bottom: 25px;
-    padding: 45px 20px;
+}
 
+header {
+    color: #ffffff;
     text-align: center;
-
-    background-color: #168bc5;
-
-    border-radius: 18px;
-}
-
-
-.index-header h1 {
-    margin: 0 0 10px;
-
-    font-family: "Gowun Batang", serif;
-    font-size: 42px;
-    font-weight: 400;
-    color: #ffffff;
-}
-
-
-.index-header-message {
-    margin: 0;
-
-    font-family: "Gowun Batang", serif;
-    font-size: 18px;
-    color: #ffffff;
-}
-
-
-/* ========================================
-   바로가기 메뉴
-======================================== */
-
-.index-navigation {
-    margin-bottom: 30px;
-    padding: 22px;
-
-    background-color: #f2faff;
-
-    border: 1px solid #9dd4ef;
-    border-radius: 16px;
-}
-
-
-.index-navigation h3 {
-    margin-top: 0;
-    margin-bottom: 17px;
-
-    color: #087ab5;
-}
-
-
-.index-menu-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-
-    margin: 0;
-    padding: 0;
-
-    list-style: none;
-}
-
-
-.index-menu-list a {
-    display: inline-block;
-
-    padding: 9px 15px;
-
-    color: #087ab5;
-    background-color: #ffffff;
-
-    text-decoration: none;
-
-    border: 1px solid #168bc5;
-    border-radius: 20px;
-}
-
-
-.index-menu-list a:hover {
-    color: #ffffff;
     background-color: #168bc5;
 }
 
-
-.index-menu-list .index-signup-link {
-    color: #ffffff;
-    background-color: #168bc5;
-
-    font-weight: bold;
-}
-
-
-/* ========================================
-   주요 소식 게시판
-======================================== */
-
-.index-main {
-    margin-bottom: 30px;
-    padding: 24px;
-
-    background-color: #f2faff;
-
-    border: 1px solid #9dd4ef;
-    border-radius: 16px;
-}
-
-
-.index-main > h2 {
-    margin-top: 0;
-    margin-bottom: 22px;
-    padding-bottom: 10px;
-
-    color: #087ab5;
-
-    border-bottom: 2px solid #168bc5;
-}
-
-
-/* 게시판에 붙인 메모지 */
-
-.index-content-card {
-    position: relative;
-
-    margin-bottom: 20px;
-    padding: 25px 22px 20px;
-
-    background-color: #ffffff;
-
-    border: 1px solid #9dd4ef;
-    border-radius: 12px;
-}
-
-
-/* 메모지를 고정한 핀 */
-
-.index-content-card::before {
-    content: "";
-
-    position: absolute;
-    top: 9px;
-    left: 50%;
-
-    width: 10px;
-    height: 10px;
-
-    background-color: #168bc5;
-
-    border-radius: 50%;
-
-    transform: translateX(-50%);
-}
-
-
-.index-content-card:last-child {
-    margin-bottom: 0;
-}
-
-
-.index-content-card h3 {
-    margin-top: 5px;
-    margin-bottom: 12px;
-
-    color: #087ab5;
-}
-
-
-.index-content-card p {
-    margin: 0;
-    color: #355f78;
-}
-
-
-/* 업데이트 항목 */
-
-.index-content-card p span {
-    color: #087ab5;
-    font-weight: bold;
-}
-
-
-
-.index-skill-list {
-    margin: 0;
-    padding: 0;
-
-    list-style: none;
-}
-
-
-.index-skill-list li {
-    margin-bottom: 9px;
-    padding: 11px 14px;
-
-    font-family: "Nanum Gothic Coding", monospace;
-    font-size: 15px;
-    color: #234f6b;
-
-    background-color: #f4faff;
-
-    border-left: 5px solid #168bc5;
-    border-radius: 8px;
-}
-
-
-.index-skill-list li:last-child {
-    margin-bottom: 0;
-}
-
-
-
-.index-skill-list .not-yet {
-    color: #738997;
-    background-color: #eef9ff;
-
-    border-left-color: #a7b7c0;
-
-    opacity: 1;
-}
-
-
-
-
-.index-aside {
+main {
     padding: 20px;
-
-    background-color: #f2faff;
-
-    border: 1px solid #9dd4ef;
-    border-radius: 14px;
 }
 
-
-.index-aside h2 {
-    margin-top: 0;
-    margin-bottom: 14px;
-
-    color: #087ab5;
-}
-
-
-.index-aside p {
-    margin: 7px 0;
-}
-
-
-.index-github-link {
-    color: #087ab5;
-
-    font-family: "Nanum Gothic Coding", monospace;
-    font-weight: bold;
-
-    text-decoration: none;
-}
-
-
-.index-github-link:hover {
-    text-decoration: underline;
-}
-
-
-/* ========================================
-   하단 정보
-======================================== */
-
-.index-footer {
-    margin-top: 25px;
+footer {
     padding-top: 15px;
 
     text-align: center;
-    color: #66879a;
 
     border-top: 1px solid #9dd4ef;
 }
 
 
-.index-footer p {
-    margin: 0;
-    font-size: 14px;
-}
-
-
 /* ========================================
-   모바일 화면
+   이미지
 ======================================== */
 
-@media (max-width: 650px) {
-    .index-page {
-        padding: 15px;
-    }
-
-    .index-container {
-        width: 100%;
-        padding: 18px;
-    }
-
-    .index-header {
-        padding: 35px 15px;
-    }
-
-    .index-header h1 {
-        font-size: 34px;
-    }
-
-    .index-menu-list {
-        display: block;
-    }
-
-    .index-menu-list li {
-        margin-bottom: 8px;
-    }
-
-    .index-menu-list li:last-child {
-        margin-bottom: 0;
-    }
-
-    .index-menu-list a {
-        display: block;
-        text-align: center;
-    }
-
-    .index-main {
-        padding: 17px;
-    }
-
-    .index-content-card {
-        padding: 25px 17px 18px;
-    }
-}
-
-/* 
-여기서부터 Holiday 시작 */
-
-
-/* ========================================
-   myHoliday.html
-======================================== */
-
-.holiday-page {
-    margin: 0;
-    padding: 40px 20px;
-
-    font-family: "Nanum Gothic", sans-serif;
-    line-height: 1.7;
-    color: #234f6b;
-
-    background-color: #eaf7ff;
-}
-
-
-/* 전체 영역 */
-
-.holiday-container {
-    width: 90%;
-    max-width: 900px;
-
-    margin: 0 auto;
-    padding: 30px;
-
-    background-color: #ffffff;
-
-    border: 2px solid #168bc5;
-    border-radius: 24px;
-}
-
-
-/* 상단 제목 */
-
-.holiday-header {
-    margin-bottom: 25px;
-    padding: 40px 25px;
-
-    text-align: center;
-
-    background-color: #168bc5;
-
-    border-radius: 18px;
-}
-
-
-.holiday-header h1 {
-    margin: 0 0 12px;
-
-    font-family: "Gowun Batang", serif;
-    font-size: 40px;
-    font-weight: 400;
-    color: #ffffff;
-}
-
-
-.holiday-header p {
-    margin: 0;
-
-    font-family: "Gowun Batang", serif;
-    font-size: 17px;
-    color: #ffffff;
-}
-
-
-/* 본문 */
-
-.holiday-main {
-    padding: 24px;
-
-    background-color: #f2faff;
-
-    border: 1px solid #9dd4ef;
-    border-radius: 16px;
-}
-
-
-/* 시간대 카드 */
-
-.holiday-card,
-.holiday-meal,
-.holiday-sleep {
-    padding: 20px;
-
-    background-color: #ffffff;
-
-    border: 1px solid #9dd4ef;
-    border-radius: 14px;
-}
-
-
-.holiday-card {
-    border-left: 7px solid #168bc5;
-}
-
-
-.holiday-card h2,
-.holiday-meal h2,
-.holiday-sleep h2 {
-    margin-top: 0;
-    margin-bottom: 13px;
-
-    color: #087ab5;
-}
-
-
-.holiday-card ul {
-    margin-bottom: 0;
-    padding-left: 24px;
-}
-
-
-.holiday-card li {
-    margin-bottom: 6px;
-}
-
-
-.holiday-card li:last-child {
-    margin-bottom: 0;
-}
-
-
-/* 식사 영역 */
-
-.holiday-meal {
-    background-color: #f8fcff;
-    text-align: center;
-}
-
-
-.holiday-meal p {
-    margin-bottom: 0;
-}
-
-
-/* mark 태그 */
-
-.holiday-page mark {
-    padding: 5px 10px;
-
-    color: #075f91;
-    background-color: #d8f1ff;
-
-    border-radius: 8px;
-}
-
-
-/* 취침 영역 */
-
-.holiday-sleep {
-    border-left: 7px solid #75a9c8;
-}
-
-
-.holiday-sleep p {
-    margin-bottom: 14px;
-}
-
-
-/* 메인 이동 링크 */
-
-.holiday-navigation {
-    margin-top: 25px;
-    text-align: center;
-}
-
-
-.holiday-navigation a {
-    display: inline-block;
-
-    padding: 10px 18px;
-
-    color: #087ab5;
-    background-color: #ffffff;
-
-    text-decoration: none;
-
-    border: 1px solid #168bc5;
-    border-radius: 20px;
-}
-
-
-.holiday-navigation a:hover {
-    color: #ffffff;
-    background-color: #168bc5;
-}
-
-
-/* 하단 */
-
-.holiday-footer {
-    margin-top: 25px;
-    padding-top: 15px;
-
-    text-align: center;
-    color: #66879a;
-
-    border-top: 1px solid #9dd4ef;
-}
-
-
-.holiday-footer p {
-    margin: 0;
-    font-size: 14px;
-}
-
-
-/* 작은 화면 */
-
-@media (max-width: 650px) {
-    .holiday-page {
-        padding: 15px;
-    }
-
-    .holiday-container {
-        width: 100%;
-        padding: 18px;
-    }
-
-    .holiday-header {
-        padding: 32px 18px;
-    }
-
-    .holiday-header h1 {
-        font-size: 32px;
-    }
-
-    .holiday-main {
-        padding: 17px;
-    }
+img {
+    max-width: 100%;
 }

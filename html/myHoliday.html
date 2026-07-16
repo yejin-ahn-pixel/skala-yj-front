@@ -12,19 +12,42 @@
     >
 
     <link rel="stylesheet" href="../css/style.css">
+
+    <style>
+        .schedule-card {
+            border-left: 7px solid #168bc5;
+        }
+
+
+        .schedule-card ul {
+            margin-bottom: 0;
+            padding-left: 24px;
+        }
+
+
+        .schedule-card li {
+            margin-bottom: 6px;
+        }
+
+
+        .schedule-card li:last-child {
+            margin-bottom: 0;
+        }
+    </style>
+≈
 </head>
 
-<body class="holiday-page">
-    <div class="holiday-container">
-        <header class="holiday-header">
-            <h1>나의 휴일 일과</h1>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 style="color:#087ab5;"><mark><b>나의 휴일 일과</b> </mark></h1>
             <p>
                 7.17(금)~7.20(일) 연휴 동안 미뤄두었던 일들을
                 해결하는 시간.
             </p>
         </header>
-    <main class="holiday-main">
-        <section class="holiday-card">
+    <main class="main-content">
+        <section class="content-card schedule-card">
             <h2>🌞 오전</h2>
             <ul>
                 <li>기상</li>
@@ -35,14 +58,14 @@
 
     <br>
 
-    <section class="holiday-meal">
+    <section class="content-card meal-card">
         <h2>🍚 점심밥</h2>
         <p><mark><b></b> 바로바로 합시다.</mark></p>
     </section>
 
     <br>
 
-    <section class="holiday-card">
+    <section class="content-card schedule-card">
         <h2>😀 오후</h2>
         
         <ul>
@@ -55,7 +78,7 @@
 
     <br>
     
-    <section class="holiday-meal">
+    <section class="content-card meal-card">
         <h2>🍽️ 저녁밥</h2>
         <p>
              <mark>밥은 제때 먹읍시다.</mark>
@@ -64,7 +87,7 @@
 
     <br>
     
-    <section class="holiday-card">
+    <section class="content-card schedule-card">
     <h2>🥹야간</h2>
         <ul>
             <li>밀린 연락 청산하기</li>
@@ -73,18 +96,18 @@
         </ul>
     </section>
 <br>
-    <section class="holiday-sleep">
+    <section class="content-card sleep-card">
 
         <h2>🌙취침</h2>
         <p><mark>하루를 정리하고 빠르게 잠들기💤</mark></p>
         
     </section>
 
-    <nav class="holiday-navigation">
+    <nav class="bottom-navigation">
         <a href="index.html">메인으로 돌아가기</a>
     </nav>
     
-    <footer class="holiday-footer">
+    <footer class="footer">
         <p>SKALA FRONT-END PAGE</p>
     </footer>
 
