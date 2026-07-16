@@ -1,41 +1,108 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>여행 앨범</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang&family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
-    <h1>나의 여행지</h1>
-    <!-- 여행지: 토론토, 돗토리, 부산 -->
-    
-    <h2>여행 사진</h2>
-    <audio controls autoplay>
-        <source src="../media/homepage_bgm.mp3" type="audio/mp3">
-    </audio>
-    
-    <br>
+    <div class="container">
+        <header>
+            <h1>나의 여행 앨범</h1>
+            <p>사진과 영상 기록들</p>
+        </header>
 
-    <h3>토론토 (25.08)</h3>
-    <img src="../media/토론토_여행앨범.jpeg" alt="" style="width: 200px">
-    <br>
+        <main>
+            <section aria-labelledby="travel-music-title">
+                <h2 id="travel-music-title">🎵 여행 음악</h2>
+                <p>여행할 때 마음가짐</p>
+                <audio controls>
+                    <source src="../media/homepage_bgm.mp3" type="audio/mpeg">
+                    브라우저가 오디오 재생을 지원하지 않습니다.
+                </audio>
+            </section>
 
-    <h3>아이치 (24.01) </h3>
-    <img src="../media/아이치_여행앨범.jpg" alt="" style="width: 200px">
-    <br>
+            <section aria-labelledby="travel-photo-title">
+                <h2 id="travel-photo-title">📷 여행 사진</h2>
 
-    <h3>돗토리 (23.10) </h3>
-    <img src="../media/돗토리_여행앨범.jpg" alt="" style="width: 200px">
-    <br>
-    
-    <h2>여행 브이로그 </h2>
-    <video width="320" height="240" controls>
-        <source src="../media/돗토리_여행앨범_동영상.mp4" type="video/mp4">
-    </video>
-    <p>돗토리 사구 /w HJ언니</p>
+                <div class="trip-list">
+                    <figure class="trip-card">
+                        <img
+                            src="../media/토론토_여행앨범.jpeg"
+                            alt="토론토 여행에서 촬영한 풍경"
+                        >
+                        <figcaption>
+                            <strong>캐나다 토론토</strong>
+                            <span>토론토 아일랜드, UOT, Queen's st</span>
+                            <small>2025년 8월</small>
+                        </figcaption>
+                    </figure>
 
-    <nav class="bottom-navigation"> 
-    <a href="index.html">메인으로 돌아가기</a> 
+                    <figure class="trip-card">
+                        <img
+                            src="../media/아이치_여행앨범.jpg"
+                            alt="아이치 여행에서 촬영한 풍경"
+                        >
+                        <figcaption>
+                            <strong>일본 아이치</strong>
+                            <span>지브리 파크, 나고야, 시라카와 고</span>
+                            <small>2024년 1월</small>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="trip-card">
+                        <img
+                            src="../media/돗토리_여행앨범.jpg"
+                            alt="돗토리 여행에서 촬영한 풍경"
+                        >
+                        <figcaption>
+                            <strong>일본 돗토리</strong>
+                            <span>사구에서 남긴 특별한 하루</span>
+                            <small>2023년 10월</small>
+                        </figcaption>
+                    </figure>
+                </div>
+            </section>
+
+            <section aria-labelledby="travel-video-title">
+                <h2 id="travel-video-title">🎬 여행 브이로그</h2>
+                <figure class="video-card">
+                    <video controls>
+                        <source src="../media/토론토_여행앨범_동영상.mp4" type="video/mp4">
+                        브라우저가 동영상 재생을 지원하지 않습니다.
+                    </video>
+                    <figcaption>📍나이아가라 폭포</figcaption>
+                </figure>
+
+                <figure class="video-card">
+                    <video controls>
+                        <source src="../media/아이치_여행앨범_동영상.mp4" type="video/mp4">
+                        브라우저가 동영상 재생을 지원하지 않습니다.
+                    </video>
+                    <figcaption>📍아이치 지브리 파크</figcaption>
+                </figure>
+
+                <figure class="video-card">
+                    <video controls>
+                        <source src="../media/돗토리_여행앨범_동영상.mp4" type="video/mp4">
+                        브라우저가 동영상 재생을 지원하지 않습니다.
+                    </video>
+                    <figcaption>📍돗토리 사구</figcaption>
+                </figure>
+            </section>
+        </main>
+
+        <footer>
+            <nav class="bottom-navigation" aria-label="하단 메뉴">
+                <a href="index.html">← 메인으로 돌아가기</a>
+            </nav>
+            <p>안예진의 유니버스</p>
+        </footer>
+    </div>
 </body>
 </html>

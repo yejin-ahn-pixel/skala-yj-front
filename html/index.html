@@ -6,94 +6,117 @@
     <title>홈페이지</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang&family=Nanum+Gothic+Coding&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang&family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
+    <script src="../script/upDown.js" defer></script>
+    <script src="../script/grade.js" defer></script>
 </head>
 
 
-<body class="page">
-    <div class="container">
-
-        <header class="header">
+<body>
+    <div class="home-page">
+        <header class="home-header">
             <h1>안예진의 유니버스</h1>
             <p>데굴데굴 굴러가는 인생</p>
         </header>
 
-    <nav class="navigation">
-        <h3>바로가기 메뉴</h3>
-                <a href="myProfile.html">프로필 소개</a><br>
-                <a href="myClass.html">주간 시간표</a><br>
-                <a href="myHoliday.html">휴일 계획</a><br>
-                <a href="myTrip.html">여행 앨범</a><br>
-                <a href="signUp.html">👉 회원가입은 여기로</a>
-    </nav>
+        <nav class="home-navigation" aria-label="주요 메뉴">
+            <a href="myProfile.html">프로필</a>
+            <a href="myClass.html">시간표</a>
+            <a href="myHoliday.html">휴일 계획</a>
+            <a href="myTrip.html">여행 앨범</a>
+            <a href="signUp.html">회원가입</a>
+        </nav>
 
-    <hr>
+        <div class="home-layout">
+            <aside class="home-sidebar">
+                <section class="home-profile">
+                    <h2>미니 프로필</h2>
+                    <p class="profile-name"><strong>안예진</strong></p>
 
-    <main class="main-content">
-        <h2>주요 소식</h2>
+                    <dl class="mini-profile-info">
+                        <dt>과정</dt>
+                        <dd>SKALA 4기</dd>
 
-        <section class="content-card">
-            <h3><mark>📌 업데이트 소식</mark></h3>
+                        <dt>전공</dt>
+                        <dd>Brain &amp; Cognitive Science<br>Life Science</dd>
 
-            <div class="notice">
-                <h4>아이치 여행 업데이트</h4>
-                <p>여행 앨범이 새롭게 추가되었습니다.</p>
-            </div>
+                        <dt>언어</dt>
+                        <dd>한국어 · English · 日本語</dd>
+                    </dl>
 
-            <div class="notice">
-                <h4>휴일 계획 수정</h4>
-                <p>최신 일정으로 업데이트했습니다.</p>
-            </div>
-        </section>
+                    <p class="profile-links">
+                        <a href="https://github.com/yejin-ahn-pixel">GitHub</a>
+                        ·
+                        <a href="https://infobox71443.tistory.com">Blog</a>
+                    </p>
+                </section>
+            </aside>
 
-        <section class="content-card">
-            <h3><mark>실시간 스킬 업데이트</mark></h3>
+            <main class="home-main">
+                <h2>주요 소식</h2>
 
-            <ul class="skill-list">
-                <li>HTML 기초</li>
-                <li>CSS 기초</li>
-                <li class="not-yet">JavaScript 기초 (학습 예정)</li>
-            </ul>
-        </section>
+                <section class="home-card">
+                    <h3>📌 업데이트 소식</h3>
 
-        <section class="content-card">
-            <h3><mark>예진 사진관</mark></h3>
-            <p>Olympus mju 5010</p>
-                <div class="gallery">
-                    <img
-                        class="gallery-image"
-                        src="../media/사진관 (1).JPG"
-                        alt="예진 사진관의 첫 번째 사진"
-                    >
+                    <div class="notice">
+                        <h4>아이치 여행 업데이트</h4>
+                        <p>여행 앨범이 새롭게 추가되었습니다.</p>
+                    </div>
 
-                    <img
-                        class="gallery-image"
-                        src="../media/사진관 (2).JPG"
-                        alt="예진 사진관의 두 번째 사진"
-                    >
-                </div>
-                
-            </section>
-        </main>
-    
-        <aside class="aside">
-            <h2>부가 정보</h2>
+                    <div class="notice">
+                        <h4>휴일 계획 수정</h4>
+                        <p>최신 일정으로 업데이트했습니다.</p>
+                    </div>
+                </section>
 
-            <p>제작자 : 안예진</p>
+                <section class="home-card">
+                    <h3>💻 실시간 스킬 업데이트</h3>
+                    <ul class="skill-list">
+                        <li>HTML 기초</li>
+                        <li>CSS 기초</li>
+                        <li>JavaScript 기초</li>
+                    </ul>
+                </section>
 
-            <p>페이지 링크</p>
-            <ul>
-                <li><a href="https://github.com/yejin-ahn-pixel"> 깃허브</a></li>
-                <li><a href="https://github.com/yejin-ahn-pixel"> 블로그</a></li>
-            </ul>
-                
-        </aside>
+                <section class="home-card">
+                    <h3>📷 예진 사진관</h3>
+                    <p>Olympus mju 5010</p>
+                    <div class="gallery">
+                        <img
+                            class="gallery-image"
+                            src="../media/사진관 (1).JPG"
+                            alt="예진 사진관의 첫 번째 사진"
+                        >
+
+                        <img
+                            class="gallery-image"
+                            src="../media/사진관 (2).JPG"
+                            alt="예진 사진관의 두 번째 사진"
+                        >
+                    </div>
+                </section>
+            </main>
+
+            <aside class="home-sidebar">
+                <h2>미니 게임 천국</h2>
+                <section class="practice-card" aria-labelledby="up-down-title">
+                    <h3 id="up-down-title">🎯 Up-Down 게임</h3>
+                    <p>1부터 50 사이의 숫자를 맞혀 보세요.</p>
+                    <button id="up-down-start" type="button">게임 시작</button>
+                </section>
+
+                <section class="practice-card" aria-labelledby="grade-title">
+                    <h3 id="grade-title">📝 성적 계산기</h3>
+                    <p>세 과목의 평균과 합격 여부를 계산해 보세요.</p>
+                    <button id="grade-start" type="button">성적 계산</button>
+                </section>
+            </aside>
+        </div>
 
         <footer>
             <p>최종 수정일 : 2026.07</p>
         </footer>
-
     </div>
 </body>
 </html>

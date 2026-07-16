@@ -13,6 +13,7 @@ body {
     font-family: "Nanum Gothic", sans-serif;
     line-height: 1.7;
     color: #234f6b;
+    background-color: #eef9ff;
 }
 
 
@@ -102,7 +103,27 @@ footer {
 
     text-align: center;
 
-    border-top: 1px solid #9dd4ef;
+    border-top: 1px solid #168bc5;
+}
+
+.bottom-navigation {
+    margin-top: 25px;
+    text-align: center;
+}
+
+.bottom-navigation a {
+    display: inline-block;
+    padding: 10px 20px;
+
+    color: #ffffff;
+    background-color: #168bc5;
+    border: 1px solid #168bc5;
+    border-radius: 6px;
+}
+
+.bottom-navigation a:hover {
+    text-decoration: none;
+    background-color: #234f6b;
 }
 
 
@@ -112,4 +133,371 @@ footer {
 
 img {
     max-width: 100%;
+}
+
+
+/* JS 게임 실습 카드 */
+
+.practice-card {
+    margin-bottom: 24px;
+    padding: 20px;
+
+    text-align: center;
+    background-color: #eef9ff;
+
+    border: 1px solid #168bc5;
+    border-radius: 10px;
+}
+
+.practice-card h3 {
+    margin-top: 0;
+}
+
+.practice-card button {
+    padding: 10px 24px;
+
+    font: inherit;
+    font-weight: bold;
+    color: #ffffff;
+    cursor: pointer;
+    background-color: #168bc5;
+
+    border: 0;
+    border-radius: 6px;
+}
+
+.practice-card button:hover,
+.practice-card button:focus-visible {
+    background-color: #234f6b;
+}
+
+/* 여행 앨범 이미지 카드 스타일 */
+.trip-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+
+    margin: 20px 0;
+}
+
+.trip-card,
+.video-card {
+    margin: 0;
+    padding: 10px;
+
+    background-color: #eef9ff;
+    border: 1px solid #168bc5;
+    border-radius: 10px;
+
+    transition: transform 0.2s;
+}
+
+.trip-card:hover,
+.video-card:hover {
+    transform: scale(1.03);
+}
+
+.trip-card img {
+    width: 100%;
+    height: 180px;
+
+    object-fit: cover;
+}
+
+.trip-card figcaption,
+.video-card figcaption {
+    padding: 10px 5px 5px;
+}
+
+.trip-card figcaption span,
+.trip-card figcaption small,
+.video-card figcaption span,
+.video-card figcaption small {
+    display: block;
+}
+
+.trip-card figcaption small,
+.video-card figcaption small {
+    margin-top: 5px;
+}
+
+/* 여행 브이로그 카드 스타일 */
+.video-card {
+    max-width: 520px;
+    margin: 20px auto;
+}
+
+.video-card video {
+    display: block;
+    width: 100%;
+}
+
+/* 회원가입 폼 스타일 */
+fieldset {
+    margin-bottom: 24px;
+    padding: 20px;
+    background-color: #eef9ff;
+    border: 1px solid #168bc5;
+    border-radius: 10px;
+}
+
+legend {
+    padding: 0 10px;
+    font-weight: bold;
+    color: #168bc5;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #168bc5;
+    border-radius: 6px;
+}
+
+form input,
+form select,
+form textarea {
+    font: inherit;
+}
+
+.email-inputs {
+    display: flex;
+    gap: 8px;
+}
+
+.email-inputs input,
+.email-inputs select {
+    flex: 1;
+}
+
+.form-actions {
+    text-align: center;
+}
+
+input[type="submit"],
+input[type="reset"],
+.form-actions a {
+    display: inline-block;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    border: 1px solid #168bc5;
+    border-radius: 6px;
+}
+
+input[type="submit"] {
+    color: #ffffff;
+    background-color: #168bc5;
+}
+
+input[type="reset"] {
+    color: #234f6b;
+    background-color: #eef9ff;
+}
+
+.form-actions a {
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #234f6b;
+}
+
+/* 프로필 카드 스타일 */
+.profile-card {
+    margin-bottom: 20px;
+    padding: 20px;
+
+    background-color: #eef9ff;
+    border-left: 5px solid #168bc5;
+    border-radius: 10px;
+}
+
+.profile-card ul,
+.profile-card ol,
+.profile-card dl {
+    margin-bottom: 0;
+}
+
+.profile-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.profile-grid .profile-card {
+    margin-bottom: 0;
+}
+
+/* 시간표 스타일 */
+.table-wrapper {
+    overflow-x: auto;
+}
+
+.class-table {
+    width: 100%;
+    min-width: 800px;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.class-table th,
+.class-table td {
+    padding: 10px;
+    border: 1px solid #168bc5;
+}
+
+/* 휴일 카드 움직임 */
+.schedule-card {
+    transition: transform 0.2s;
+}
+
+.schedule-card:hover {
+    transform: translateX(5px);
+}
+
+/* 메인 미니홈피 스타일 */
+.home-page {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+
+    background-color: #ffffff;
+}
+
+.home-navigation {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 18px 0;
+
+    border-top: 2px solid #168bc5;
+    border-bottom: 2px solid #168bc5;
+}
+
+.home-navigation a {
+    padding: 10px 16px;
+
+    font-weight: bold;
+    background-color: #ffffff;
+    border: 1px solid #168bc5;
+    border-radius: 6px;
+}
+
+.home-navigation a:hover {
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #168bc5;
+}
+
+.home-layout {
+    display: grid;
+    grid-template-columns: 220px 1fr 260px;
+    gap: 20px;
+}
+
+.home-main {
+    padding: 0;
+}
+
+.home-card,
+.home-sidebar {
+    padding: 20px;
+    background-color: #eef9ff;
+    border: 1px solid #168bc5;
+    border-radius: 10px;
+}
+
+.home-sidebar {
+    align-self: start;
+}
+
+.home-card {
+    margin-bottom: 20px;
+}
+
+.home-card h3,
+.notice h4 {
+    margin-top: 0;
+}
+
+.notice {
+    margin-bottom: 10px;
+    padding: 12px;
+    background-color: #ffffff;
+    border-left: 4px solid #168bc5;
+}
+
+.notice p {
+    margin-bottom: 0;
+}
+
+.home-profile {
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.profile-name {
+    font-size: 18px;
+}
+
+.mini-profile-info {
+    display: grid;
+    grid-template-columns: 45px 1fr;
+    gap: 8px;
+
+    text-align: left;
+}
+
+.mini-profile-info dt {
+    font-weight: bold;
+    color: #168bc5;
+}
+
+.mini-profile-info dd {
+    margin: 0;
+}
+
+.profile-links {
+    margin-bottom: 0;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.gallery-image {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* 작은 화면에서 한 줄로 배치 */
+@media (max-width: 900px) {
+    .home-navigation {
+        flex-wrap: wrap;
+    }
+
+    .home-layout,
+    .profile-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 786px) {
+    .trip-list {
+        grid-template-columns: 1fr;
+    }
 }
