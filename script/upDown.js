@@ -30,9 +30,9 @@ function startUpDownGame() {
         count += 1;
 
         if (userNum > computerNum) {
-            alert("Down! 더 낮은 숫자를 입력하세요.");
+            alert(`Down! 더 낮은 숫자를 입력하세요.시도: ${count}회`);
         } else if (userNum < computerNum) {
-            alert("Up! 더 높은 숫자를 입력하세요.");
+            alert(`Up! 더 높은 숫자를 입력하세요. 시도: ${count}회`);
         } else {
             alert(`축하합니다! ${count}번 만에 맞추셨습니다.`);
             return;

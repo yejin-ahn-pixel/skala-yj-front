@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="../css/style.css">
     <script src="../script/upDown.js" defer></script>
     <script src="../script/grade.js" defer></script>
+    <script src="../script/bag.js" defer></script>
+    <script type="module" src="../script/realtimeInfo.js"></script>
 </head>
 
 
@@ -115,23 +117,29 @@
             </main>
 
             <aside class="home-sidebar">
-                <h2>미니 게임 천국</h2>
-                <section class="practice-card" aria-labelledby="up-down-title">
-                    <h3 id="up-down-title">🎯 Up-Down 게임</h3>
-                    <p>1부터 50 사이의 숫자를 맞혀 보세요.</p>
-                    <button id="up-down-start" type="button">게임 시작</button>
+                <section class="weather-selector" aria-labelledby="weather-title">
+                    <h2 id="weather-title">실시간 날씨</h2>
+                    <label for="city-select">도시를 선택하세요</label>
+                    <select id="city-select">
+                        <option value="">도시를 선택하세요</option>
+                        <option value="seoul">서울 🇰🇷</option>
+                        <option value="nara">나라 🇯🇵</option>
+                        <option value="toronto">토론토 🇨🇦</option>
+                    </select>
+                    <div id="city-result" aria-live="polite"></div>
                 </section>
 
-                <section class="practice-card" aria-labelledby="grade-title">
-                    <h3 id="grade-title">📝 성적 계산기</h3>
-                    <p>세 과목의 평균과 합격 여부를 계산해 보세요.</p>
-                    <button id="grade-start" type="button">성적 계산</button>
-                </section>
+                <h2>미니 게임 천국</h2>
+                <div class="game-list">
+                    <button id="up-down-start" type="button">🎯 Up-Down 게임</button>
+                    <button id="grade-start" type="button">📝 성적 계산기</button>
+                    <button id="bag-start" type="button">👜 왓츠 인 마이 백</button>
+                </div>
             </aside>
         </div>
 
         <footer>
-            <p>최종 수정일 : 2026.07</p>
+            <p>안예진의 유니버스 | 프론트 홈페이지 프로젝트 | 이메일: <a href="mailto:yejin68ahn@gmail.com">yejin68ahn@gmail.com</a></p>
         </footer>
     </div>
 </body>

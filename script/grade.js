@@ -1,10 +1,10 @@
 function startGradeCalculator() {
-    var subjects = ["HTML", "CSS", "JavaScript"];
-    var total = 0;
+    var subjects = ["HTML", "CSS", "JavaScript"]; //과목 이름이 담긴 변수
+    var total = 0; //총점을 저장할 변수
 
-    for (var i = 0; i < subjects.length; i++) {
+    for (var i = 0; i < subjects.length; i++) { //배열의 길이만큼 돌리면서
         while (true) {
-            var input = prompt(subjects[i] + " 점수를 입력하세요.");
+            var input = prompt(subjects[i] + " 점수를 입력하세요."); //각 과목의 점수를 연속해서 입력받기
 
             if (input === null) {
                 alert("성적 계산을 취소했습니다.");
@@ -13,7 +13,11 @@ function startGradeCalculator() {
 
             var score = Number(input);
 
-            if (input.trim() !== "" && score >= 0 && score <= 100) {
+
+            if (
+                input.trim() !== "" && Number.isInteger(score) &&
+                score >= 0 && score <= 100
+            ) {//올바른 값이 입력됐을 때
                 total += score;
                 break;
             }

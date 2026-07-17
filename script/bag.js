@@ -6,14 +6,14 @@ function showMyBag() {
         { name: "보조배터리", count: 1 }
     ];
 
-    let message = "👜 왓츠 인 마이 백\n\n";
+    let message = "👜 왓츠 인 마이 백\n\n----------\n";
     let totalCount = 0;
 
     for (const item of myBag) {
         message += `🎒 ${item.name} : ${item.count}개\n`;
         totalCount += item.count;
     }
-
+    message += `----------\n`
     message += `\n총 물품 종류: ${myBag.length}가지`;
     message += `\n총 물품 개수: ${totalCount}개`;
 
