@@ -2,7 +2,7 @@ function showMyBag() {
     const myBag = [
         { name: "이어폰", count: 2 },
         { name: "스마트폰 충전기", count: 1 },
-        { name: "미니 약통", count: 1 }
+        { name: "미니 약통", count: 1 },
         { name: "보조배터리", count: 1 }
     ];
 
@@ -10,7 +10,7 @@ function showMyBag() {
     let totalCount = 0;
 
     for (const item of myBag) {
-        message += `• ${item.name} : ${item.count}개\n`;
+        message += `🎒 ${item.name} : ${item.count}개\n`;
         totalCount += item.count;
     }
 
