@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang&family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
+    <script src="../script/tripModal.js" defer></script>
 </head>
 
 <body>
@@ -31,7 +32,7 @@
                 <h2 id="travel-photo-title">📷 여행 사진</h2>
 
                 <div class="trip-list">
-                    <figure class="trip-card">
+                    <figure class="trip-card" data-trip="toronto">
                         <img
                             src="../media/토론토_여행앨범.jpeg"
                             alt="토론토 여행에서 촬영한 풍경"
@@ -40,10 +41,11 @@
                             <strong>캐나다 토론토</strong>
                             <span>토론토 아일랜드, UOT, Queen's st</span>
                             <small>2025년 8월</small>
+                            <button class="trip-more-button" type="button" aria-haspopup="dialog">클릭하여 더보기</button>
                         </figcaption>
                     </figure>
 
-                    <figure class="trip-card">
+                    <figure class="trip-card" data-trip="aichi">
                         <img
                             src="../media/아이치_여행앨범.jpg"
                             alt="아이치 여행에서 촬영한 풍경"
@@ -52,10 +54,11 @@
                             <strong>일본 아이치</strong>
                             <span>지브리 파크, 나고야, 시라카와 고</span>
                             <small>2024년 1월</small>
+                            <button class="trip-more-button" type="button" aria-haspopup="dialog">클릭하여 더보기</button>
                         </figcaption>
                     </figure>
 
-                    <figure class="trip-card">
+                    <figure class="trip-card" data-trip="tottori">
                         <img
                             src="../media/돗토리_여행앨범.jpg"
                             alt="돗토리 여행에서 촬영한 풍경"
@@ -64,6 +67,7 @@
                             <strong>일본 돗토리</strong>
                             <span>돗토리 사구, 요나고, 아오야마 고쇼전</span>
                             <small>2023년 10월</small>
+                            <button class="trip-more-button" type="button" aria-haspopup="dialog">클릭하여 더보기</button>
                         </figcaption>
                     </figure>
                 </div>
@@ -104,6 +108,18 @@
         <footer>
             <p>안예진의 유니버스 | 프론트 홈페이지 프로젝트 | 이메일: <a href="mailto:yejin68ahn@gmail.com">yejin68ahn@gmail.com</a></p>
         </footer>
+    </div>
+
+    <div class="trip-modal" id="trip-modal" role="dialog" aria-modal="true" aria-labelledby="trip-modal-title" hidden>
+        <div class="trip-modal-content">
+            <button class="trip-modal-close" type="button" aria-label="여행 상세 닫기">&times;</button>
+            <p class="trip-modal-date" id="trip-modal-date"></p>
+            <h2 id="trip-modal-title"></h2>
+            <p id="trip-modal-description"></p>
+            <div class="trip-modal-gallery" id="trip-modal-gallery" aria-label="여행 사진 모음"></div>
+            <h3>기억에 남는 장소</h3>
+            <ul id="trip-modal-highlights"></ul>
+        </div>
     </div>
 </body>
 </html>
