@@ -34,7 +34,7 @@
             <p>
                 <label class="form-label" for="userEmail">이메일</label>
                 <span class="email-inputs">
-                    <input type="text" id="userEmail" name="userEmail" placeholder="example">
+                    <input type="text" id="userEmail" name="userEmail" required placeholder="example">
                     <span>@</span>
                     <select name="emailDomain" aria-label="이메일 도메인">
                         <option value="direct">직접 입력</option>
@@ -51,12 +51,12 @@
             <legend>개인 프로필 정보</legend>
             <p>
                 <label class="form-label" for="userName">이름</label>
-                <input type="text" id="userName" name="userName" minlength="2" maxlength="10">
+                <input type="text" id="userName" name="userName" minlength="2" maxlength="10" required>
                 <small>(필수)</small>
             </p>
             <p>
                 <label class="form-label" for="userBirth">생년월일</label>
-                <input type="date" id="userBirth" name="userBirth">
+                <input type="date" id="userBirth" name="userBirth" required>
                 <small>(필수)</small>
             </p>
             <p>
